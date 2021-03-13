@@ -24,7 +24,11 @@ class instagram:
 
         else:
             print(log.json()['message'])
-
+            
+            
+    def get_user_id(self, username):
+        json = get(f'https://instagram.com/{username}?__a=1').json()
+        return json['logging_page_id'].split('_')[1]
 
 
 
