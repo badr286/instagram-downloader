@@ -104,5 +104,3 @@ class instagram:
                 if input(res+'\nSleep? (y/n): ') == 'y':
                     print('Sleeping For 5min\nStarted At: '+ strftime('%H:%M:%S'))
                     sleep(60*5)
-                else:
-                    break
